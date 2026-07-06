@@ -317,7 +317,7 @@ export default function Contact() {
                     value={form.from_name}
                     onChange={handleChange}
                     required
-                    placeholder="John Doe"
+                    placeholder="Enter your full name"
                     style={inp}
                     onFocus={onF}
                     onBlur={onB}
@@ -343,7 +343,7 @@ export default function Contact() {
                     value={form.from_email}
                     onChange={handleChange}
                     required
-                    placeholder="john@co.com"
+                    placeholder="yourname@example.com"
                     style={inp}
                     onFocus={onF}
                     onBlur={onB}
@@ -371,7 +371,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  placeholder="Hi Rishikesh, I'd love to connect about..."
+                  placeholder="Write your message here..."
                   style={{ ...inp, resize: "none" }}
                   onFocus={onF}
                   onBlur={onB}
