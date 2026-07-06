@@ -31,7 +31,7 @@ import { personal } from "../data";
 //  5. Save this file → form sends real emails ✓
 // ════════════════════════════════════════════════════════
 const EMAILJS_SERVICE_ID = "service_r441xng";
-const EMAILJS_TEMPLATE_ID = "template_vjheh02";
+const EMAILJS_TEMPLATE_ID = "template_wnqv3gp";
 const EMAILJS_PUBLIC_KEY = "403roD8y2tfbGWbsg";
 // ════════════════════════════════════════════════════════
 
