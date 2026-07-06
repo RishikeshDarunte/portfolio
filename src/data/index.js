@@ -10,7 +10,7 @@ export const personal = {
   phone: '+91-9730837025',
   github: 'https://github.com/RishikeshDarunte',
   linkedin: 'https://www.linkedin.com/in/rishikesh-darunte-480269229/',
-  leetcode: 'https://leetcode.com/RishikeshDarunte/',
+  leetcode: 'https://leetcode.com/Rishikesh_Darunte/',
 };
 
 export const journey = [
