@@ -1,16 +1,115 @@
-# React + Vite
+# 🌐 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Welcome to my personal portfolio repository! This portfolio showcases my skills, projects, education, certifications, and experience as a Software Engineer and Full Stack Developer.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 **Portfolio:** *(Add your deployed portfolio link here)*
 
-## React Compiler
+Example:
+```
+https://rishikeshdarunte.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
 
-## Expanding the Oxlint configuration
+# 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Frontend
+- CSS3
+- JavaScript
+- React.js
+- Bootstrap
+
+### Tools
+- Git
+- GitHub
+- VS Code
+
+---
+
+# 📂 Project Structure
+
+```
+Portfolio/
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   ├── App.js
+│   └── index.js
+│
+├── package.json
+├── README.md
+└── .gitignore
+```
+
+---
+
+# ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/RishikeshDarunte/portfolio
+```
+
+Navigate to the project
+
+```bash
+cd portfolio
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm start
+```
+
+For Vite projects
+
+```bash
+npm run dev
+```
+
+---
+
+# 🤝 Contributing
+
+Contributions, suggestions, and feedback are welcome.
+
+1. Fork the repository
+2. Create your feature branch
+
+```bash
+git checkout -b feature/NewFeature
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add New Feature"
+```
+
+4. Push to the branch
+
+```bash
+git push origin feature/NewFeature
+```
+
+5. Open a Pull Request
+
+---
+
+## 👨‍💻 Author
+
+**Rishikesh Darunte**
