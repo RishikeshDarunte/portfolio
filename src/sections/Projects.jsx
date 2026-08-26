@@ -16,6 +16,9 @@ function ProjectCard({ proj, idx }) {
       <div style={{
         height: 180,
         background: proj.gradient,
+        backgroundImage: proj.image ? `url(${proj.image})` : undefined,
+        backgroundSize: 'cover',
+        backgroundPosition: 'top center',
         position: 'relative',
         overflow: 'hidden',
         display: 'flex',
@@ -25,7 +28,9 @@ function ProjectCard({ proj, idx }) {
         {/* Animated shimmer overlay */}
         <div style={{
           position: 'absolute', inset: 0,
-          background: 'linear-gradient(135deg,rgba(255,255,255,0.03) 0%,transparent 60%)',
+          background: proj.image
+            ? 'linear-gradient(180deg,rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.55) 100%)'
+            : 'linear-gradient(135deg,rgba(255,255,255,0.03) 0%,transparent 60%)',
         }} />
         {/* Label badge */}
         <div style={{
@@ -51,14 +56,16 @@ function ProjectCard({ proj, idx }) {
           onMouseLeave={e => e.currentTarget.style.color = '#94a3b8'}>
           <FiGithub size={14} />
         </motion.a>
-        {/* Big faint project title as background text */}
-        <div style={{
-          fontFamily: 'Space Grotesk', fontWeight: 700,
-          fontSize: 'clamp(22px,3vw,36px)',
-          color: 'rgba(255,255,255,0.08)',
-          textAlign: 'center', padding: '0 20px',
-          userSelect: 'none', letterSpacing: '-1px',
-        }}>{proj.title}</div>
+        {/* Big faint project title as background text (only when no screenshot) */}
+        {!proj.image && (
+          <div style={{
+            fontFamily: 'Space Grotesk', fontWeight: 700,
+            fontSize: 'clamp(22px,3vw,36px)',
+            color: 'rgba(255,255,255,0.08)',
+            textAlign: 'center', padding: '0 20px',
+            userSelect: 'none', letterSpacing: '-1px',
+          }}>{proj.title}</div>
+        )}
       </div>
 
       {/* Card body */}
@@ -131,7 +138,7 @@ export default function Projects() {
         </motion.h2>
 
         {/* Project grid — 3 columns like reference screenshot 9 */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(320px,1fr))', gap: 20, marginBottom: 72 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(320px,1fr))', gap: 20, marginBottom: 72, justifyContent: 'center' }}>
           {projects.map((proj, i) => <ProjectCard key={proj.id} proj={proj} idx={i} />)}
         </div>
 
@@ -146,14 +153,14 @@ export default function Projects() {
           }}>
           Certifications
         </motion.h3>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(240px,1fr))', gap: 14 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: 14, justifyContent: 'center' }}>
           {certifications.map((cert, i) => (
             <motion.div key={cert.name}
               initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }} transition={{ delay: i * 0.09 }}
               whileHover={{ y: -4, borderColor: 'rgba(34,211,200,0.3)' }}
               className="glass-card"
-              style={{ padding: '20px 22px', transition: 'all 0.25s' }}>
+              style={{ padding: '20px 22px', transition: 'all 0.25s', display: 'flex', flexDirection: 'column' }}>
               <div style={{ fontFamily: 'Space Grotesk', fontWeight: 600, fontSize: 14, color: '#fff', marginBottom: 4, lineHeight: 1.4 }}>{cert.name}</div>
               <div style={{ fontSize: 12, color: '#475569', marginBottom: 12 }}>
                 {cert.org}{cert.badge && <span style={{ color: '#64748b', marginLeft: 5 }}>· {cert.badge}</span>}
@@ -162,7 +169,7 @@ export default function Projects() {
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: 5,
                   fontSize: 12, fontWeight: 600, color: 'var(--accent)',
-                  textDecoration: 'none', transition: 'opacity 0.2s',
+                  textDecoration: 'none', transition: 'opacity 0.2s', marginTop: 'auto',
                 }}
                 onMouseEnter={e => e.currentTarget.style.opacity = '0.7'}
                 onMouseLeave={e => e.currentTarget.style.opacity = '1'}>

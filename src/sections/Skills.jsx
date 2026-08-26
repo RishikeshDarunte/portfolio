@@ -19,7 +19,7 @@ export default function Skills() {
         </motion.p>
 
         {/* 4-column grid of category cards — exactly like reference screenshot 7 */}
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(240px,1fr))', gap:20 }}>
+        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(240px,1fr))', gap:20, alignItems:'start', justifyContent:'center' }}>
           {skillGroups.map((group, gi) => (
             <motion.div key={group.category}
               initial={{ opacity:0, y:28 }} whileInView={{ opacity:1, y:0 }}

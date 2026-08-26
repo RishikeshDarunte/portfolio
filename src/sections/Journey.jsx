@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { FiBriefcase, FiBook, FiAward, FiMapPin, FiGithub, FiExternalLink } from 'react-icons/fi';
-import { journey, certifications } from '../data';
+import { journey } from '../data';
 
 const ICON = { work: FiBriefcase, education: FiBook, award: FiAward };
 const ICON_COLOR = { work: '#3b82f6', education: '#3b82f6', award: '#f59e0b' };
@@ -81,15 +81,14 @@ export default function Journey() {
                     {item.items && (
                       <ul style={{ display:'flex', flexDirection:'column', gap:10 }}>
                         {item.items.map((it, i) => {
-                          const cert = certifications.find(c => c.name.startsWith(it.name.split('—')[0].trim()));
                           return (
                             <li key={i} style={{ display:'flex', gap:10, alignItems:'flex-start' }}>
                               <span style={{ width:7, height:7, borderRadius:'50%', background:'var(--accent)', marginTop:6, flexShrink:0 }}/>
                               <div>
                                 <div style={{ fontSize:14, color:'#94a3b8', fontWeight:500 }}>{it.name}</div>
                                 <div style={{ fontSize:12, color:'#475569', marginBottom:4 }}>{it.org}</div>
-                                {cert && (
-                                  <a href={cert.link} target="_blank" rel="noopener noreferrer"
+                                {it.link && (
+                                  <a href={it.link} target="_blank" rel="noopener noreferrer"
                                     style={{ fontSize:12, color:'var(--accent)', textDecoration:'none', display:'inline-flex', alignItems:'center', gap:4,
                                       transition:'opacity 0.2s' }}
                                     onMouseEnter={e=>e.currentTarget.style.opacity='0.7'}

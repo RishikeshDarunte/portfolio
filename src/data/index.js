@@ -23,15 +23,6 @@ export const journey = [
     desc: "Intensive post-graduate program covering enterprise Java, Spring Boot, React, microservices, REST APIs, and cloud technologies. Hands-on project-based learning.",
   },
   {
-    period: "Feb 2025 – Aug 2025",
-    type: "work",
-    title: "Full Stack Developer Intern",
-    org: "The Kiran Academy · Pune, IN",
-    desc: "Built a full-featured Job Portal web application using Django and MySQL. Implemented authentication, role-based access control, REST APIs, and a responsive Bootstrap frontend.",
-    tech: ["Django", "MySQL", "Python", "Bootstrap", "REST APIs"],
-    github: "https://github.com/RishikeshDarunte/Job-Portal",
-  },
-  {
     period: "2021 – 2025",
     type: "education",
     title: "B.Tech — Computer Science & Engineering",
@@ -47,10 +38,18 @@ export const journey = [
       {
         name: "Google IT Support Professional Certificate",
         org: "Google / Coursera",
+        link: "https://drive.google.com/file/d/1JpsYwFV0vR3fOsM6zTjSrx8BMHAlI_7I/view?usp=sharing",
       },
-      { name: "Programming in Java — Silver + Elite", org: "NPTEL" },
-      { name: "Cloud Computing — Silver + Elite", org: "NPTEL" },
-      { name: "Joy of Computing using Python — Silver + Elite", org: "NPTEL" },
+      {
+        name: "Programming in Java — Silver + Elite",
+        org: "NPTEL",
+        link: "https://drive.google.com/file/d/1MISbZy1MBjok6P2TlKjTN9Duvq9S7KbO/view?usp=sharing",
+      },
+      {
+        name: "Cloud Computing — Silver + Elite",
+        org: "NPTEL",
+        link: "https://drive.google.com/file/d/1jVnCDI7JAGvsE0kHjJq2GIjFWQ3Cm1wn/view?usp=sharing",
+      },
     ],
   },
 ];
@@ -79,12 +78,6 @@ export const skillGroups = [
     ],
   },
   {
-    category: "AI & ML",
-    icon: "🧠",
-    color: "#f472b6",
-    skills: ["Python", "TensorFlow", "LSTM", "Prophet", "Streamlit", "NLP"],
-  },
-  {
     category: "Tools & Technologies",
     icon: "🔧",
     color: "#34d399",
@@ -103,17 +96,6 @@ export const skillGroups = [
 
 export const projects = [
   {
-    id: "stock",
-    title: "Stock Market Prediction",
-    year: "2025",
-    desc: "ML-powered app predicting stock trends using LSTM neural networks and Prophet.",
-    tech: ["Python", "TensorFlow", "LSTM", "Prophet", "Streamlit"],
-    github: "https://github.com/RishikeshDarunte/Stock-Market-Prediction",
-    live: null,
-    gradient: "linear-gradient(135deg,#1e3a5f,#0f2444)",
-    label: "ML / AI",
-  },
-  {
     id: "ngo",
     title: "SahyogSetu — NGO Donation Portal",
     year: "2025",
@@ -123,17 +105,19 @@ export const projects = [
     live: null,
     gradient: "linear-gradient(135deg,#1a3a2a,#0d2018)",
     label: "Full Stack",
+    image: "/DonationPortal.png",
   },
   {
-    id: "job",
-    title: "Job Portal Web App",
+    id: "emart",
+    title: "E-Mart",
     year: "2025",
-    desc: "Full-featured job board with auth, employer & candidate dashboards built with Django.",
-    tech: ["Django", "MySQL", "Python", "Bootstrap", "REST APIs"],
-    github: "https://github.com/RishikeshDarunte/Job-Portal",
+    desc: "Full-stack e-commerce app with a multi-category product catalog, cart, secure checkout, Razorpay payments, and an e-Mart Card loyalty rewards program.",
+    tech: ["React", "Redux", "ASP.NET Core", "Spring Boot", "MySQL", "Razorpay"],
+    github: "https://github.com/RishikeshDarunte/project-EMart",
     live: null,
-    gradient: "linear-gradient(135deg,#2d1b4e,#1a0d2e)",
+    gradient: "linear-gradient(135deg,#2b2470,#150f3d)",
     label: "Full Stack",
+    image: "/Emart.png",
   },
 ];
 
@@ -154,11 +138,5 @@ export const certifications = [
     org: "NPTEL",
     badge: "Silver + Elite",
     link: "https://drive.google.com/file/d/1jVnCDI7JAGvsE0kHjJq2GIjFWQ3Cm1wn/view?usp=sharing",
-  },
-  {
-    name: "Joy of Computing using Python",
-    org: "NPTEL",
-    badge: "Silver + Elite",
-    link: "https://drive.google.com/file/d/1O1h4hInvhwexU0-RQDW-Xb5VHagSItsF/view?usp=sharing",
   },
 ];
