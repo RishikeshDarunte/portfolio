@@ -4,13 +4,7 @@ Welcome to my personal portfolio repository! This portfolio showcases my skills,
 
 ## 🚀 Live Demo
 
-🔗 **Portfolio:** *(Add your deployed portfolio link here)*
-
-Example:
-```
-https://rishikeshdarunte.vercel.app/
-
-```
+🔗 **Portfolio:** *https://rishikeshdarunte.vercel.app/*
 
 # 🛠️ Tech Stack
 
